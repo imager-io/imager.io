@@ -251,7 +251,7 @@ imager        : ▇▇▇▇ 4.20M
 				<td>✅<small>GOOD</small></td>
 				<td>The Imager CLI Interface</td>
 				<td>
-					<a href="https://github.com/imager-io/imager">Source</a>
+					<a href="https://github.com/imager-io/imager-tools">Source</a>
 					·
 					<a href="https://github.com/imager-io/imager/blob/master/docs/bin/imager-cli.md">Documentation</a>
 				</td>
@@ -261,7 +261,7 @@ imager        : ▇▇▇▇ 4.20M
 				<td>✅<small>GOOD</small></td>
 				<td>The Imager Server Interface</td>
 				<td>
-					<a href="https://github.com/imager-io/imager">Source</a>
+					<a href="https://github.com/imager-io/imager-tools">Source</a>
 					·
 					<a href="https://github.com/imager-io/imager/blob/master/docs/bin/imager-server.md">Documentation</a>
 				</td>
@@ -295,9 +295,9 @@ imager        : ▇▇▇▇ 4.20M
 				<td>✅<small>GOOD</small></td>
 				<td>✅<small>YES</small></td>
 				<td>
-					<a href="https://github.com/imager-io/imager">Source</a>
+					<a href="https://github.com/imager-io/imager-io-js">Source</a>
 					·
-					<a href="https://github.com/imager-io/imager/blob/master/docs/imager-nodejs.md">Documentation</a>
+					<a href="https://github.com/imager-io/imager-io-js/tree/master/docs">Documentation</a>
 					·
 					<a href="https://github.com/imager-io/imager-nodejs-example">Example</a>
 					·
