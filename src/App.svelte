@@ -85,9 +85,7 @@
 	main {
 		width: 90%;
 		margin: 0 auto;	
-	}
-	main > section:last-child {
-		margin-bottom: 100px;
+		padding-bottom: 100px;
 	}
 	main > h2 {
 		font-size: 1.5em;
