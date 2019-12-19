@@ -92,7 +92,19 @@
         }
         pre {
             overflow: scroll;
-            margin: 10px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        main h1 {
+            font-size: 1.8em;
+            border-bottom: 3px solid #333333;
+            padding-bottom: 5px;
+            margin: 20px 0;
+        }
+        main h1 > a, main h2 > a {
+            text-decoration: none;
+            color: inherit;
+            border-bottom: none;
         }
         main {
             width: 90%;
@@ -121,8 +133,36 @@
     </header>
     <main>
         
-        <h1>Being redesigned for new Imager development…</h1>
-
+        <h1>About</h1>
+<p>Imager is a tool for automated image compression, and can competitively optimize very noisy, high resolution images into rather “tiny” files.</p>
+<h1><a href="https://github.com/colbyn/imager-bench-2019-11-2">Image Compression Benchmarks<i style="font-size: 18px; margin-left: 3px;" class="fas fa-external-link-alt"></i></a></h1>
+<pre style="background-color:#2b303b;">
+<span style="background-color:#2b303b;color:#c0c5ce;">source        : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 39.00M (4 images)
+kraken.io     : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 24M
+jpegmini.com  : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 16M
+compression.ai: ▇▇▇▇▇▇▇▇ 8.90M
+imager        : ▇▇▇▇ 4.20M
+</span></pre>
+<h1>Features</h1>
+<h3>Brute Force Image Optimization</h3>
+<blockquote>
+<p>Optimizes the compression using ML based metrics in a trial ’n error sorta manner.</p>
+</blockquote>
+<p>This is a tool that can competitively optimize (e.g.) extremely noisy, high resolution images; at the expense of increased encoding time and CPU overhead. This is a tradeoff that should be suitable for over 90% of online content, where site performance matters.</p>
+<p>It's pretty easy too.</p>
+<p><small>Using the CLI interface:</small></p>
+<pre style="background-color:#2b303b;">
+<span style="background-color:#2b303b;color:#c0c5ce;">$ imager -i input/image.jpeg -o output/image.jpeg
+</span></pre>
+<p><small>Using the JavaScript non-blocking API:</small></p>
+<pre style="background-color:#2b303b;">
+<span style="background-color:#2b303b;color:#b48ead;">const </span><span style="background-color:#2b303b;color:#c0c5ce;">{</span><span style="background-color:#2b303b;color:#bf616a;">ImageBuffer</span><span style="background-color:#2b303b;color:#c0c5ce;">} = </span><span style="background-color:#2b303b;color:#8fa1b3;">require</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">imager-io</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;);
+</span><span style="background-color:#2b303b;color:#bf616a;">ImageBuffer
+	</span><span style="background-color:#2b303b;color:#c0c5ce;">.</span><span style="background-color:#2b303b;color:#96b5b4;">open</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">source-image.jpeg</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;)
+	.</span><span style="background-color:#2b303b;color:#8fa1b3;">then</span><span style="background-color:#2b303b;color:#c0c5ce;">(buffer </span><span style="background-color:#2b303b;color:#b48ead;">=&gt; </span><span style="background-color:#2b303b;color:#bf616a;">buffer</span><span style="background-color:#2b303b;color:#c0c5ce;">.</span><span style="background-color:#2b303b;color:#8fa1b3;">opt</span><span style="background-color:#2b303b;color:#c0c5ce;">())
+	.</span><span style="background-color:#2b303b;color:#8fa1b3;">then</span><span style="background-color:#2b303b;color:#c0c5ce;">(buffer </span><span style="background-color:#2b303b;color:#b48ead;">=&gt; </span><span style="background-color:#2b303b;color:#bf616a;">buffer</span><span style="background-color:#2b303b;color:#c0c5ce;">.</span><span style="background-color:#2b303b;color:#8fa1b3;">save</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">result.jpeg</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;))
+	.</span><span style="background-color:#2b303b;color:#8fa1b3;">then</span><span style="background-color:#2b303b;color:#c0c5ce;">(() </span><span style="background-color:#2b303b;color:#b48ead;">=&gt; </span><span style="background-color:#2b303b;color:#c0c5ce;">console.</span><span style="background-color:#2b303b;color:#96b5b4;">log</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">done</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;));
+</span></pre>
     </main>
 </body>
 </html>
