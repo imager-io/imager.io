@@ -1,1 +1,1 @@
-cp _site/index.html ../index.html
+cp -r _site docs

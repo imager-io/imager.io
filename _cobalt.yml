@@ -1,14 +1,8 @@
-destination: docs
 site:
     title: Imager
     description: Imager Website
     base_url: https://imager.io
-
-    posts:
-    rss: rss.xml
-
 syntax_highlight:
     theme: "base16-ocean.dark"
     enabled: true
-
 ignore: ["scripts", "docs", "CNAME"]
