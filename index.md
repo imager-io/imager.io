@@ -8,12 +8,19 @@ Imager is a tool for automated image compression, and can competitively optimize
 
 It's pretty easy too.
 
-<small>Using the CLI interface:</small>
+### Using the CLI interface
+
+Basic:
 ```shell
-$ imager -i input/image.jpeg -o output/image.jpeg
+$ imager -i input/image.jpeg -o output/image.jpeg -f jpeg
 ```
 
-<small>Using the JavaScript non-blocking API:</small>
+Offering JPEG/WebP variants:
+```shell
+$ imager -i input/image.jpeg -O output/dir/ -f jpeg webp
+```
+
+### Using the JavaScript non-blocking API
 
 ```javascript
 const {ImageBuffer} = require("imager-io");
@@ -25,7 +32,6 @@ ImageBuffer
 ```
 
 
-
 # [Image Compression Benchmarks<i style="font-size: 18px; margin-left: 3px;" class="fas fa-external-link-alt"></i>](https://github.com/colbyn/imager-bench-2019-11-2)
 
 ```text
@@ -35,6 +41,7 @@ jpegmini.com  : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 16M
 compression.ai: ▇▇▇▇▇▇▇▇ 8.90M
 imager        : ▇▇▇▇ 4.20M
 ```
+
 
 # Articles
 

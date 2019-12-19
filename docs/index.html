@@ -95,9 +95,14 @@
             padding: 10px;
             border-radius: 3px;
         }
+        code {
+            background: #46464642;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
         main h1, main h2, main h3, main h4, main h5, main h6 {
             font-family: 'Orbitron', sans-serif;
-            border-bottom: 2px solid #3838385c;
+            border-bottom: 1px solid #3838385c;
             padding-bottom: 5px;
             margin: 20px 0;
         }
@@ -146,11 +151,16 @@
         <h1>About</h1>
 <p>Imager is a tool for automated image compression, and can competitively optimize very noisy, high resolution images into rather “tiny” files.</p>
 <p>It's pretty easy too.</p>
-<p><small>Using the CLI interface:</small></p>
+<h3>Using the CLI interface</h3>
+<p>Basic:</p>
 <pre style="background-color:#2b303b;">
-<span style="background-color:#2b303b;color:#c0c5ce;">$ imager -i input/image.jpeg -o output/image.jpeg
+<span style="background-color:#2b303b;color:#c0c5ce;">$ imager -i input/image.jpeg -o output/image.jpeg -f jpeg
 </span></pre>
-<p><small>Using the JavaScript non-blocking API:</small></p>
+<p>Offering JPEG/WebP variants:</p>
+<pre style="background-color:#2b303b;">
+<span style="background-color:#2b303b;color:#c0c5ce;">$ imager -i input/image.jpeg -O output/dir/ -f jpeg webp
+</span></pre>
+<h3>Using the JavaScript non-blocking API</h3>
 <pre style="background-color:#2b303b;">
 <span style="background-color:#2b303b;color:#b48ead;">const </span><span style="background-color:#2b303b;color:#c0c5ce;">{</span><span style="background-color:#2b303b;color:#bf616a;">ImageBuffer</span><span style="background-color:#2b303b;color:#c0c5ce;">} = </span><span style="background-color:#2b303b;color:#8fa1b3;">require</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">imager-io</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;);
 </span><span style="background-color:#2b303b;color:#bf616a;">ImageBuffer
