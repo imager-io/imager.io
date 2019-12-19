@@ -79,7 +79,7 @@
         header > div.banner a > span:hover {
             text-decoration: underline;
         }
-        h1, h2, h3 {
+        header h1, header h2, header h3 {
             font-family: 'Orbitron', sans-serif;
             margin: 0;
             padding:  0;
@@ -95,16 +95,26 @@
             padding: 10px;
             border-radius: 3px;
         }
-        main h1 {
-            font-size: 1.8em;
-            border-bottom: 3px solid #333333;
+        main h1, main h2, main h3, main h4, main h5, main h6 {
+            font-family: 'Orbitron', sans-serif;
+            border-bottom: 2px solid #3838385c;
             padding-bottom: 5px;
             margin: 20px 0;
+        }
+        main h1 {
+            font-size: 1.8em;
+            border-bottom: 3px solid #333333 !important;
+        }
+        main h2 {
+            font-size: 1.2em;
         }
         main h1 > a, main h2 > a {
             text-decoration: none;
             color: inherit;
             border-bottom: none;
+        }
+        li a {
+            color: #333;
         }
         main {
             width: 90%;
@@ -128,27 +138,13 @@
             </a>
         </div>
         <div>
-            <p><b>Site performance tools for efficiently distributing media on the web.</b> <small>Everything is free and open source, with absolutely no SAAS lock-ins or vendors.</small></p>
+            <p><b>Optimizes the compression using ML based metrics in a trial ’n error sorta manner.</b> <small>Everything is free and open source, with absolutely no SAAS lock-ins or vendors.</small></p>
         </div>
     </header>
     <main>
         
         <h1>About</h1>
 <p>Imager is a tool for automated image compression, and can competitively optimize very noisy, high resolution images into rather “tiny” files.</p>
-<h1><a href="https://github.com/colbyn/imager-bench-2019-11-2">Image Compression Benchmarks<i style="font-size: 18px; margin-left: 3px;" class="fas fa-external-link-alt"></i></a></h1>
-<pre style="background-color:#2b303b;">
-<span style="background-color:#2b303b;color:#c0c5ce;">source        : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 39.00M (4 images)
-kraken.io     : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 24M
-jpegmini.com  : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 16M
-compression.ai: ▇▇▇▇▇▇▇▇ 8.90M
-imager        : ▇▇▇▇ 4.20M
-</span></pre>
-<h1>Features</h1>
-<h3>Brute Force Image Optimization</h3>
-<blockquote>
-<p>Optimizes the compression using ML based metrics in a trial ’n error sorta manner.</p>
-</blockquote>
-<p>This is a tool that can competitively optimize (e.g.) extremely noisy, high resolution images; at the expense of increased encoding time and CPU overhead. This is a tradeoff that should be suitable for over 90% of online content, where site performance matters.</p>
 <p>It's pretty easy too.</p>
 <p><small>Using the CLI interface:</small></p>
 <pre style="background-color:#2b303b;">
@@ -163,6 +159,19 @@ imager        : ▇▇▇▇ 4.20M
 	.</span><span style="background-color:#2b303b;color:#8fa1b3;">then</span><span style="background-color:#2b303b;color:#c0c5ce;">(buffer </span><span style="background-color:#2b303b;color:#b48ead;">=&gt; </span><span style="background-color:#2b303b;color:#bf616a;">buffer</span><span style="background-color:#2b303b;color:#c0c5ce;">.</span><span style="background-color:#2b303b;color:#8fa1b3;">save</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">result.jpeg</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;))
 	.</span><span style="background-color:#2b303b;color:#8fa1b3;">then</span><span style="background-color:#2b303b;color:#c0c5ce;">(() </span><span style="background-color:#2b303b;color:#b48ead;">=&gt; </span><span style="background-color:#2b303b;color:#c0c5ce;">console.</span><span style="background-color:#2b303b;color:#96b5b4;">log</span><span style="background-color:#2b303b;color:#c0c5ce;">(&quot;</span><span style="background-color:#2b303b;color:#a3be8c;">done</span><span style="background-color:#2b303b;color:#c0c5ce;">&quot;));
 </span></pre>
+<h1><a href="https://github.com/colbyn/imager-bench-2019-11-2">Image Compression Benchmarks<i style="font-size: 18px; margin-left: 3px;" class="fas fa-external-link-alt"></i></a></h1>
+<pre style="background-color:#2b303b;">
+<span style="background-color:#2b303b;color:#c0c5ce;">source        : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 39.00M (4 images)
+kraken.io     : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 24M
+jpegmini.com  : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 16M
+compression.ai: ▇▇▇▇▇▇▇▇ 8.90M
+imager        : ▇▇▇▇ 4.20M
+</span></pre>
+<h1>Articles</h1>
+<ul>
+<li><a href="https://medium.com/@colbyn/modern-image-optimization-for-2020-issues-solutions-and-open-source-solutions-543af00e3e51">Modern Image Optimization for 2020 - Issues, Solutions, and Open Source Solutions</a></li>
+</ul>
+
     </main>
 </body>
 </html>

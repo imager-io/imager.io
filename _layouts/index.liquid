@@ -79,7 +79,7 @@
         header > div.banner a > span:hover {
             text-decoration: underline;
         }
-        h1, h2, h3 {
+        header h1, header h2, header h3 {
             font-family: 'Orbitron', sans-serif;
             margin: 0;
             padding:  0;
@@ -95,16 +95,26 @@
             padding: 10px;
             border-radius: 3px;
         }
-        main h1 {
-            font-size: 1.8em;
-            border-bottom: 3px solid #333333;
+        main h1, main h2, main h3, main h4, main h5, main h6 {
+            font-family: 'Orbitron', sans-serif;
+            border-bottom: 2px solid #3838385c;
             padding-bottom: 5px;
             margin: 20px 0;
+        }
+        main h1 {
+            font-size: 1.8em;
+            border-bottom: 3px solid #333333 !important;
+        }
+        main h2 {
+            font-size: 1.2em;
         }
         main h1 > a, main h2 > a {
             text-decoration: none;
             color: inherit;
             border-bottom: none;
+        }
+        li a {
+            color: #333;
         }
         main {
             width: 90%;
@@ -128,7 +138,7 @@
             </a>
         </div>
         <div>
-            <p><b>Site performance tools for efficiently distributing media on the web.</b> <small>Everything is free and open source, with absolutely no SAAS lock-ins or vendors.</small></p>
+            <p><b>Optimizes the compression using ML based metrics in a trial ’n error sorta manner.</b> <small>Everything is free and open source, with absolutely no SAAS lock-ins or vendors.</small></p>
         </div>
     </header>
     <main>
