@@ -1,1 +1,128 @@
-source/_site/index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+    <title>Index</title>
+
+    <!-- FONTS - TODO: SMALLER FILES -->
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+
+	<!-- FONT-AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <!-- CSS - TODO: MOVE TO CSS FILE -->
+    <style>
+        html, body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(16, 243, 211);
+            color: #333;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column !important;
+            }
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            padding: 0 5px 5px;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+        header > div.banner {
+            padding: 16px 32px;
+            background: #1b1b1b;
+            color: #0ff3d3;
+            display: flex;
+            flex-direction: column;
+        }
+        header > div.banner > h1 {
+            font-size: 3em;
+        }
+        header > div.banner > hr {
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: 1px solid #0ff3d3;
+        }
+        header > div.banner > * {
+            display: flex;
+            align-items: center;
+        }
+        header > div.banner a {
+            color: #0ff3d3;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin-bottom: 4px;
+        }
+        header > div.banner a:last-child {
+            margin-bottom: 0;
+        }
+        header > div.banner a > i {
+            margin-right: 5px;
+            font-size: 1em;
+        }
+        header > div.banner a > span:hover {
+            text-decoration: underline;
+        }
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding:  0;
+        }
+        p {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 10px;
+            color: #333;
+        }
+        pre {
+            overflow: scroll;
+            margin: 10px;
+        }
+        main {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 100px;   
+        }
+    </style>
+</head>
+<body>
+    <header class="top">
+        <div class="banner">
+            <h1>Imager</h1>
+            <hr>
+            <a href="https://github.com/imager-io">
+                <i class="fab fa-github"></i>
+                <span>GitHub Organization</span>
+            </a>
+            <a href="mailto: hello@colbyn.com">
+                <i class="fas fa-envelope"></i>
+                <span>hello@colbyn.com</span>
+            </a>
+        </div>
+        <div>
+            <p><b>Site performance tools for efficiently distributing media on the web.</b> <small>Everything is free and open source, with absolutely no SAAS lock-ins or vendors.</small></p>
+        </div>
+    </header>
+    <main>
+        
+        <h1>Being redesigned for new Imager development…</h1>
+
+    </main>
+</body>
+</html>
