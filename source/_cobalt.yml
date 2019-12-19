@@ -1,0 +1,13 @@
+site:
+    title: Imager
+    description: Imager Website
+    base_url: https://imager.io
+posts:
+    rss: rss.xml
+ignore: ["scripts"]
+
+syntax_highlight:
+    theme: "base16-ocean.dark"
+    enabled: true
+
+
